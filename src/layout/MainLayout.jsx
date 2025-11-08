@@ -5,14 +5,17 @@ import Footer from "../components/Footer";
 function MainLayout() {
   return (
     <div>
-      <Navbar /> {/* Fixed sidebar */}
+     <header>
+      <nav>
+          <Navbar /> 
+      </nav>
+     </header>
 
-      {/* Main content pushed to the right */}
-      <main className="ml-[260px] p-6">
-        <Outlet />
+      <main className="ml-[260px] pl-60">
+        <Outlet  />
       </main>
 
-      <Footer /> {/* Optional, stays below */}
+      <Footer /> 
     </div>
   );
 }
